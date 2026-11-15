@@ -11,7 +11,7 @@
   --text: #f4f6fb;
   --text-soft: #cbd3e1;
   --muted: #98a3b9;
-  --dim: #6d788f;
+  --dim: #78849d;
 
   --accent: #d7ff63;
   --accent-strong: #c7f345;
@@ -1914,6 +1914,7 @@ svg {
   margin: 0;
   color: var(--text-soft);
   letter-spacing: 0.16em;
+  white-space: nowrap;
 }
 
 .footer__brand span {
