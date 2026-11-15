@@ -1,0 +1,97 @@
+function get(id) {
+  const node = document.getElementById(id);
+  if (!node) throw new Error(`Missing required element #${id}`);
+  return node;
+}
+
+export const el = {
+  body: document.body,
+
+  topbarTime: get('topbar-time'),
+  heroDate: get('hero-date'),
+  serviceStatus: get('service-status'),
+  serviceStatusText: get('service-status-text'),
+
+  form: get('search-form'),
+  input: get('city-input'),
+  searchBtn: get('search-btn'),
+  searchBtnText: get('search-btn-text'),
+  searchError: get('search-error'),
+  searchField: get('search-field'),
+  cityChips: get('city-chips'),
+
+  report: get('report'),
+  loadingStrip: get('loading-strip'),
+  loadingText: get('loading-text'),
+  reportAlert: get('report-alert'),
+  alertTitle: get('alert-title'),
+  alertMessage: get('alert-message'),
+  alertContext: get('alert-context'),
+  alertRetry: get('alert-retry'),
+  alertDismiss: get('alert-dismiss'),
+
+  weatherCard: get('weather-card'),
+  weatherContent: get('weather-content'),
+  initialLoader: get('initial-loader'),
+  initialLoaderText: get('initial-loader-text'),
+  weatherError: get('weather-error'),
+  weatherErrorTitle: get('weather-error-title'),
+  weatherErrorMessage: get('weather-error-message'),
+  weatherRetry: get('weather-retry'),
+  weatherChangeCity: get('weather-change-city'),
+
+  locationName: get('location-name'),
+  locationRegion: get('location-region'),
+  localTime: get('local-time'),
+  localDate: get('local-date'),
+  tempC: get('temp-c'),
+  conditionText: get('condition-text'),
+  feelsLike: get('feels-like'),
+  daylight: get('daylight'),
+  lastUpdated: get('last-updated'),
+  timezone: get('timezone'),
+  weatherVisual: get('weather-visual'),
+
+  verdictCard: get('verdict-card'),
+  verdictContent: get('verdict-content'),
+  verdictState: get('verdict-state'),
+  verdictStateTitle: get('verdict-state-title'),
+  verdictStateMessage: get('verdict-state-message'),
+  verdictStatus: get('verdict-status'),
+  verdictIcon: get('verdict-icon'),
+  verdictTitle: get('verdict-title'),
+  verdictDescription: get('verdict-description'),
+  basisTemp: get('basis-temp'),
+  basisCondition: get('basis-condition'),
+  basisWind: get('basis-wind'),
+
+  humidity: get('humidity'),
+  humidityBar: get('humidity-bar'),
+  humidityNote: get('humidity-note'),
+  wind: get('wind'),
+  windBar: get('wind-bar'),
+  windNote: get('wind-note'),
+  uv: get('uv'),
+  uvBar: get('uv-bar'),
+  uvNote: get('uv-note'),
+
+  detailCloud: get('detail-cloud'),
+  detailVisibility: get('detail-visibility'),
+  detailPressure: get('detail-pressure'),
+  detailWind: get('detail-wind'),
+  detailTempF: get('detail-temp-f'),
+  detailUpdated: get('detail-updated'),
+
+  jsonMeta: get('json-meta'),
+  jsonOutput: get('json-output'),
+  jsonCode: get('json-code'),
+  tabFormatted: get('tab-formatted'),
+  tabRaw: get('tab-raw'),
+  copyBtn: get('copy-json'),
+  copyLabel: get('copy-label'),
+  copyStatus: get('copy-status'),
+  copyIcon: document.querySelector('.copy-btn__icon--copy'),
+  copyCheck: document.querySelector('.copy-btn__icon--check'),
+
+  liveRegion: get('live-region'),
+};

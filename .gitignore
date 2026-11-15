@@ -1,0 +1,17 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+
+# local environment — never commit the API key
+.env
+.env.*
+!.env.example
+
+# Vercel
+.vercel/
+
+# misc
+.DS_Store
+*.log
