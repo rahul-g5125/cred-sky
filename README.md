@@ -6,7 +6,7 @@ SKY CRED turns real-time conditions from [WeatherAPI.com](https://www.weatherapi
 
 ## Live demo
 
-Deployed on Vercel: _URL added after deployment._
+**[cred-sky.vercel.app](https://cred-sky.vercel.app/)**
 
 ## Features
 
