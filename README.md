@@ -119,8 +119,10 @@ Manual QA completed against the live API at 360, 390, 768, 1024, and 1440 px:
 - [x] Rapid sequential searches resolve to the newest city (stale responses ignored)
 - [x] Network failure + retry restores live data
 - [x] Full initial-load error state and retry work
-- [x] No horizontal page overflow on mobile
+- [x] No horizontal page overflow or unclipped content on mobile
 - [x] Responsive layouts fit at 360, 390, 768, 1024, and 1440 px
+- [x] Axe-core WCAG 2.1 A/AA audit: 0 violations on desktop, mobile, and alert state
+- [x] Muted text meets the 4.5:1 contrast threshold
 
 ## Deployment
 
