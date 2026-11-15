@@ -195,11 +195,17 @@ svg {
   color: var(--accent-ink);
   font-size: 12px;
   font-weight: 600;
-  transform: translateY(-160%);
-  transition: transform 0.2s var(--ease);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-200%);
+  transition: transform 0.2s var(--ease), opacity 0.2s var(--ease);
 }
 
-.skip-link:focus {
+/* Keep the link available to keyboard users without letting mobile scroll or
+   focus quirks reveal a fixed yellow pill over the page. */
+.skip-link:focus-visible {
+  opacity: 1;
+  pointer-events: auto;
   transform: translateY(0);
 }
 
